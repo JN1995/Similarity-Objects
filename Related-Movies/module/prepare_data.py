@@ -3,11 +3,11 @@ import time
 import pandas as pd 
 import logging
 
-SERVER='172.20.2.110'
-USER='gpkt'
-PASSWORD='Paytv@gpkt~!@#'
-DATABASE='RecommendDB'
-STORE="[dbo].[PAYTV_ELASTICSEARCH_RELATED]"
+SERVER='HOST_SERVER'
+USER='username'
+PASSWORD='passwork'
+DATABASE='NAME_DB'
+STORE="STORE_PROCEDURE"
 _TYPE={1: "'VOD'", 2: "'RELAX'", 3: "'CHILD'"}
 
 logging.basicConfig(filename='related.log', level=logging.INFO, filemode='a', format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
