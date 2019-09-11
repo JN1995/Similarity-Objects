@@ -3,10 +3,10 @@ import time
 import pandas as pd 
 import logging
 
-SERVER='HOST_SERVER'
-USER='username'
-PASSWORD='passwork'
-DATABASE='NAME_DB'
+SQL_HOST='HOST_SERVER'
+SQL_USER='username'
+SQL_PWD='passwork'
+SQL_DB='NAME_DB'
 STORE="STORE_PROCEDURE"
 _TYPE={1: "'VOD'", 2: "'RELAX'", 3: "'CHILD'"}
 
@@ -20,10 +20,10 @@ def create_connect():
     Output: sqlserver<pymssql.Connection>
     """
     connect = pymssql.connect(
-                    server=SERVER,
-                    user=USER,
-                    password=PASSWORD,
-                    database=DATABASE,
+                    server=SQL_HOST,
+                    user=SQL_USER,
+                    password=SQL_PWD,
+                    database=SQL_DB,
                     as_dict=True,
                     charset='UTF-8'
                     )
